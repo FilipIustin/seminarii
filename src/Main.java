@@ -1,22 +1,29 @@
-void main() {
-Books b1;
+import java.util.Scanner;
 
-Books b2= new Books();
+public class Main {
+    public static void main(String[] args) {
+        Cars b = new Cars();
+        b.setBrand("ferari");
+        System.out.println(b.getBrand());
 
-Books b3= new Books("capra", "Iustin", 20);
+        Truck b1 = new Truck();
 
-System.out.println(b3.getNume());
+        b1.move();
+        b.move();
 
-b3.setNume("mama");
+        Vehicle B[] = new Vehicle[10];
+        B[0] = b1;
+        B[1] = b;
 
-System.out.println(b3.getNume());
+        B[1].move();
 
-chestie m= new chestie();
-m.sound();
-m.schema();
-
-Books d1= new Books("capra", "Iustin", 20);
-
-
-System.out.println(b3.toString());
+        Scanner s = new Scanner(System.in);
+        try {
+            System.out.println("baga ceva");
+            int a = s.nextInt();
+            // restul codului tău cu try/catch
+        } catch (Exception e) {
+            // tratare exceptie
+        }
+    }
 }
