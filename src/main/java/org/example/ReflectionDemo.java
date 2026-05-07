@@ -16,8 +16,8 @@ import java.lang.reflect.Method;
 @Info(author = "Demo Author", version = "1.0")
 class Person {
 
-    private String name;
-    private int age;
+    protected String name;
+    protected int age;
 
     public Person() {
         this.name = "Unknown";
